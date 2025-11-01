@@ -12,6 +12,7 @@ import passwordRoutes from "./src/routes/passwordRoutes.js";
 dotenv.config();
 
 const app = express();
+app.set("trust proxy", 1);
 
 // --- security & utils ---
 app.use(helmet());
