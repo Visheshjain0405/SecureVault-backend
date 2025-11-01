@@ -1,14 +1,16 @@
 {
-  "name": "passwordmanagerbackend",
+  "name": "securevault-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Vishesh Jain",
+  "license": "MIT",
+  "description": "SecureVault backend for managing encrypted passwords using Node.js, Express, MongoDB, and JWT authentication.",
   "dependencies": {
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
@@ -20,5 +22,8 @@
     "mongoose": "^8.19.1",
     "morgan": "^1.10.1",
     "nodemailer": "^7.0.9"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }
